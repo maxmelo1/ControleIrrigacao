@@ -19,35 +19,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ifms" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="224dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="301dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="394dp"
-        android:checked="false"
-        android:text="Ativar Irrigação"
-        android:textOff="Desligado"
-        android:textOn="Ligado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:checked="false" />
-
     <TextView
         android:id="@+id/lblBluetothEstado"
         android:layout_width="166dp"
         android:layout_height="19dp"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="349dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="26dp"
+        android:gravity="center"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/play"
+        app:layout_constraintBottom_toTopOf="@+id/lblBluetothEstado"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

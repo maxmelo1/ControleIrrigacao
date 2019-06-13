@@ -68,7 +68,11 @@ public class BlueToothConnection extends Thread {
 
     }
 
-    public void write(byte b) throws IOException {
+    public Boolean isConnected(){
+        return mmSocket != null && mmSocket.isConnected();
+    }
+
+    public void write(byte[] b) throws IOException {
         os.write(b);
     }
 
